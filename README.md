@@ -6,7 +6,7 @@
 - Links
 - text
 
-#Education
+# Education
 -BC.S in Computer Science - University of Bahrain
 
 
