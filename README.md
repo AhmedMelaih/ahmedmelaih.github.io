@@ -1,9 +1,9 @@
 # ahmedmelaih.github.io
 
 ## Projects
-### Project 1
-- Discription 
-- Links
+### Sentiment analysis - NLP 
+- This project will provide a ML model to classify the content of the tweets in tweets dataset from kaggle using Kares NLP. The tweets is going to be classified as Positive or Negative based on the content of the tweets. 
+- [Links](https://github.com/AhmedMelaih/NLP/blob/main/NLP%20Tweets%20Good%20Bad.ipynb)
 - text
 
 ## Education
