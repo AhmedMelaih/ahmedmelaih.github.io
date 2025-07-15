@@ -6,7 +6,7 @@
 
 
 ## Education
-- BC.S in Computer Science - University of Bahrain
+- BC.S in Computer Science - [University of Bahrain](https://www.uob.edu.bh/)
 - Datscince and ML Advanced Skills Program - [Skills Union](https://skillsunion.com/)
   
 
