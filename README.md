@@ -4,9 +4,15 @@
 
 ### Senior System Analyst – Broadcast Core Platforms Ministry of Information  
 - [GBM-IBM ](https://www.gbmme.com)   (July 2020 - PRESENT)
-- ERP System Analyst, Almoayyed Computers  JAN 2020-JUNE 2020)
-- IT Engineer/Voice and Data , GWC LTD.  (Jun 2017-DEC 2019)
-- IT End user production support – Dealing room- BNP Paribas MEA Regional IT department  (JAN 2017- MAy 2017)
+
+### ERP System Analyst, 
+- Almoayyed Computers  (JAN 2020-JUNE 2020)
+
+### IT Engineer/Voice and Data 
+- GWC LTD.  (Jun 2017-DEC 2019)
+
+### IT End user production support 
+– Dealing room- BNP Paribas MEA Regional IT department  (JAN 2017- MAy 2017)
 
 
 ## Projects
