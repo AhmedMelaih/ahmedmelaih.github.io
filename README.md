@@ -1,14 +1,14 @@
 # ahmedmelaih.github.io
 
-## Data Scince Projects
+## [Data Scince Projects](https://github.com/AhmedMelaih/NLP_Tweets_Sentiment_Classification)
 ### NLP - Tweets Sentiment Classification
-- This project will provide a ML model to classify the content of the tweets in tweets dataset from kaggle using Kares NLP. The tweets is going to be classified as Positive or Negative based on the content of the tweets. [Link](https://github.com/AhmedMelaih/NLP_Tweets_Sentiment_Classification)
+- This project will provide a ML model to classify the content of the tweets in tweets dataset from kaggle using Kares NLP. The tweets is going to be classified as Positive or Negative based on the content of the tweets. [Link]
 
-### XGBoost Fraud Detection
-- End-to-end Credit Card fraud detection pipeline using XGBoost, including data preprocessing, class imbalance handling, model training, evaluation, and SHAP-based explainability. [Link](https://github.com/AhmedMelaih/NLP/blob/main/NLP%20Tweets%20Good%20Bad.ipynb)
+### [XGBoost Fraud Detection](https://github.com/AhmedMelaih/NLP/blob/main/NLP%20Tweets%20Good%20Bad.ipynb)
+- End-to-end Credit Card fraud detection pipeline using XGBoost, including data preprocessing, class imbalance handling, model training, evaluation, and SHAP-based explainability. [Link]
 
-### NBB Bank Stock Price Analysis
-- This project analyzes historical stock price data for major banking institutions, exploring trends, correlations, and performance metrics.[Link](https://github.com/AhmedMelaih/Bank_Stock_Price_Analysis_For_GitHub)
+### [NBB Bank Stock Price Analysis](https://github.com/AhmedMelaih/Bank_Stock_Price_Analysis_For_GitHub)
+- This project analyzes historical stock price data for major banking institutions, exploring trends, correlations, and performance metrics.[Link]
 
 ### World Kitchen 
 - World's Kitchen Mobile app: A social media app specialized in publishing food recipes, including an advanced machine learning algorithm (Cosine Similarity).
