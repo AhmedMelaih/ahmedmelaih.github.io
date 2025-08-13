@@ -1,74 +1,100 @@
 ---
 layout: default
-title: "Ahmed Melaih"
+title: "Ahmed Melaih — Portfolio"
 ---
 
-<div class="sidebar">
-  <h1 class="logo">Ahmed<br>Melaih</h1>
-  <nav>
+<aside class="sidebar">
+  <div class="brand">
+    <a class="logo" href="#top">Ahmed<br>Melaih</a>
+    <p class="tag">System Analyst & Data Engineer</p>
+  </div>
+
+  <nav class="nav">
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
     <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <div class="social">
-    <a href="https://github.com/AhmedMelaih" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/ahmedmelaih" target="_blank">LinkedIn</a>
+    <a href="https://github.com/AhmedMelaih" aria-label="GitHub" target="_blank" rel="noreferrer">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.01-1.022-.014-1.854-2.782.604-3.369-1.19-3.369-1.19-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.607.069-.607 1.003.07 1.53 1.03 1.53 1.03.892 1.528 2.341 1.087 2.91.832.091-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.684-.104-.253-.447-1.272.098-2.65 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.338 1.909-1.295 2.748-1.026 2.748-1.026.546 1.378.203 2.397.1 2.65.642.7 1.029 1.593 1.029 2.684 0 3.842-2.338 4.687-4.565 4.936.359.309.678.92.678 1.855 0 1.338-.012 2.417-.012 2.744 0 .268.18.58.688.481C19.137 20.163 22 16.416 22 12c0-5.523-4.477-10-10-10Z" fill="currentColor"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/ahmedmelaih" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.451 20.451h-3.555v-5.569c0-1.328-.026-3.037-1.85-3.037-1.853 0-2.136 1.447-2.136 2.943v5.663H9.356V9h3.413v1.561h.048c.476-.9 1.637-1.85 3.368-1.85 3.6 0 4.265 2.37 4.265 5.454v6.286zM5.337 7.433a2.063 2.063 0 1 1 0-4.126 2.063 2.063 0 0 1 0 4.126zM7.115 20.451H3.56V9h3.555v11.451z" fill="currentColor"/></svg>
+    </a>
   </div>
-</div>
+</aside>
 
-<main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a System Analyst & Data Engineer specializing in banking platforms, machine learning, and data pipelines with 7+ years of experience.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>NLP — Tweets Sentiment Classification</h3>
-      <p>Keras + LSTM model to classify sentiment; F1 = 0.89 on validation data.</p>
-      <a href="https://github.com/AhmedMelaih/NLP_Tweets_Sentiment_Classification">View Code →</a>
-    </div>
-    <div class="project-card">
-      <h3>Fraud Detection — Credit Cards (XGBoost)</h3>
-      <p>XGBoost model for fraud detection; PR-AUC = 0.84 with SHAP explainability.</p>
-      <a href="https://github.com/AhmedMelaih/XGBoost_Fraud_Detection">View Code →</a>
-    </div>
-    <div class="project-card">
-      <h3>Bank Stock Price Analysis</h3>
-      <p>Analyzed bank stock correlations & divergence using yfinance.</p>
-      <a href="https://github.com/AhmedMelaih/Bank_Stock_Price_Analysis_For_GitHub">View Code →</a>
+<main id="top" class="content">
+  <section id="hero" class="hero reveal" aria-label="Intro">
+    <p class="eyebrow">Hi, my name is</p>
+    <h1 class="title">Ahmed Melaih.</h1>
+    <h2 class="subtitle">I build reliable systems & data products.</h2>
+    <p class="lede">Senior System Analyst (7+ yrs) focused on core platforms, data pipelines, and machine learning for finance & broadcasting in Bahrain.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/AhmedMelaih" target="_blank" rel="noreferrer">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/ahmedmelaih" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a class="btn ghost" href="/assets/Ahmed_Melaih_CV.pdf" target="_blank" rel="noreferrer">Resume</a>
     </div>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <h3>Senior System Analyst – Broadcast Core Platforms</h3>
-    <p>Ministry of Information (GBM–IBM) — Nov 2017 – Present</p>
-    <ul>
-      <li>Ensured 99.9% uptime for mission-critical broadcasting systems.</li>
-      <li>Deployed a digital archiving platform, cutting retrieval time by 40%.</li>
-      <li>Managed vendor SLAs across systems and platforms.</li>
-    </ul>
-
-    <h3>Software Engineer</h3>
-    <p>Techno Blue — May 2017 – Nov 2017</p>
-    <ul>
-      <li>Developed ERP modules for inventory & sales.</li>
-      <li>Automated monthly reports—saving ~20 hours of manual work.</li>
+  <section id="about" class="section reveal" aria-label="About">
+    <h3 class="section-title"><span>01.</span> About</h3>
+    <p>I’m a <strong>System Analyst & Data Engineer</strong> who enjoys turning complex business needs into robust systems and data products. Comfortable across <em>Python</em>, <em>SQL</em>, <em>data pipelines</em>, and deploying ML with interpretability (SHAP).</p>
+    <ul class="skills">
+      <li>Python</li><li>SQL</li><li>XGBoost</li><li>Keras</li><li>NLP</li><li>SHAP</li><li>ESP32/FreeRTOS</li><li>GitHub Actions</li>
     </ul>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>B.Sc. Computer Science</strong> — University of Bahrain, May 2017</p>
-    <p><strong>Data Science & ML Advanced Skills Program</strong> — Skills Union</p>
+  <section id="experience" class="section reveal" aria-label="Experience">
+    <h3 class="section-title"><span>02.</span> Experience</h3>
+    <div class="xp-item">
+      <h4>Senior System Analyst — Broadcast Core Platforms</h4>
+      <p class="meta">Ministry of Information (GBM–IBM) • Nov 2017 — Present</p>
+      <ul>
+        <li>Maintained mission-critical broadcasting systems with 99.9% uptime.</li>
+        <li>Deployed digital archiving platform; retrieval time reduced by ~40%.</li>
+        <li>Led vendor & SLA management, integrations, and upgrades.</li>
+      </ul>
+    </div>
+    <div class="xp-item">
+      <h4>Software Engineer</h4>
+      <p class="meta">Techno Blue • May 2017 — Nov 2017</p>
+      <ul>
+        <li>Built ERP modules for inventory & sales; automated reporting (−20 hrs/mo).</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+  <section id="projects" class="section reveal" aria-label="Projects">
+    <h3 class="section-title"><span>03.</span> Projects</h3>
+    <div class="projects-grid">
+      <article class="card">
+        <h4 class="card-title">NLP — Tweets Sentiment Classification</h4>
+        <p class="card-text">Keras + LSTM on cleaned tweets with GloVe embeddings; validation F1 ≈ 0.89. SHAP for token-level explanations.</p>
+        <a class="card-link" href="https://github.com/AhmedMelaih/NLP_Tweets_Sentiment_Classification" target="_blank" rel="noreferrer">Code →</a>
+      </article>
+      <article class="card">
+        <h4 class="card-title">Fraud Detection — Credit Cards (XGBoost)</h4>
+        <p class="card-text">Imbalanced classification with PR‑AUC focus, class weighting, stratified CV, and SHAP insights.</p>
+        <a class="card-link" href="https://github.com/AhmedMelaih/XGBoost_Fraud_Detection" target="_blank" rel="noreferrer">Code →</a>
+      </article>
+      <article class="card">
+        <h4 class="card-title">Bank Stock Price Analysis</h4>
+        <p class="card-text">Cumulative returns & correlations across bank tickers using yfinance; identified high |ρ| periods & divergences.</p>
+        <a class="card-link" href="https://github.com/AhmedMelaih/Bank_Stock_Price_Analysis_For_GitHub" target="_blank" rel="noreferrer">Code →</a>
+      </article>
+    </div>
   </section>
+
+  <section id="contact" class="section reveal" aria-label="Contact">
+    <h3 class="section-title"><span>04.</span> Contact</h3>
+    <p>If you’re building systems or data products in banking, I’d love to help. Let’s talk.</p>
+    <a class="btn primary" href="mailto:your.email@example.com">Email Me</a>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ahmed Melaih</p>
+  </footer>
 </main>
