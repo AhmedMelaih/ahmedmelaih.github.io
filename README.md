@@ -1,14 +1,22 @@
 # ahmedmelaih.github.io
 
-## Data Science Projects
-### [NLP - Tweets Sentiment Classification](https://github.com/AhmedMelaih/NLP_Tweets_Sentiment_Classification)
-- This project will provide a ML model to classify the content of the tweets in tweets dataset from kaggle using Keras. Tweets will be classified as Positive or Negative based on the content of the tweets. [Link]
+### NLP — Tweets Sentiment Classification
+**Problem:** Classify tweet sentiment (positive/negative) on a Kaggle dataset.  
+**Approach:** Keras + LSTM, balanced classes, cleaned text (URLs, mentions), GloVe embeddings.  
+**Result:** F1 = 0.89 (val), SHAP to explain token impact.  
+[Code →](https://github.com/AhmedMelaih/NLP_Tweets_Sentiment_Classification)
 
-### [XGBoost Fraud Detection](https://github.com/AhmedMelaih/XGBoost_Fraud_Detection)
-- End-to-end Credit Card fraud detection pipeline using XGBoost, including data preprocessing, class imbalance handling, model training, evaluation, and SHAP-based explainability. [Link]
+### Fraud Detection — Credit Cards (XGBoost)
+**Problem:** Imbalanced fraud detection at scale.  
+**Approach:** XGBoost with class weighting, stratified CV, PR-AUC optimization, SHAP explanations.  
+**Result:** PR-AUC = 0.84; top features: amount, time-delta, merchant risk.  
+[Code →](https://github.com/AhmedMelaih/XGBoost_Fraud_Detection)
 
-### [NBB Bank Stock Price Analysis](https://github.com/AhmedMelaih/Bank_Stock_Price_Analysis_For_GitHub)
-- This project analyzes historical stock price data for major banking institutions, exploring trends, correlations, and performance metrics.[Link]
+### Bank Stock Price Analysis
+**Problem:** Compare performance & correlation across bank tickers.  
+**Approach:** yfinance, rolling means, cumulative returns, correlation heatmap.  
+**Result:** Identified pairs with |ρ| > 0.8 and divergence periods.  
+[Code →](https://github.com/AhmedMelaih/Bank_Stock_Price_Analysis_For_GitHub)
 
 ### World Kitchen 
 - World's Kitchen Mobile app: A social media app specialized in publishing food recipes, including an advanced machine learning algorithm (Cosine Similarity).
