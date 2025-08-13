@@ -23,5 +23,5 @@ sass:
   style: compressed
 
   include:
-  - docs/assets/css/style.css
+  - assets/style.css
 
