@@ -1,8 +1,8 @@
 # ahmedmelaih.github.io
 
-## Data Scince Projects
+## Data Science Projects
 ### [NLP - Tweets Sentiment Classification](https://github.com/AhmedMelaih/NLP_Tweets_Sentiment_Classification)
-- This project will provide a ML model to classify the content of the tweets in tweets dataset from kaggle using Kares NLP. The tweets is going to be classified as Positive or Negative based on the content of the tweets. [Link]
+- This project will provide a ML model to classify the content of the tweets in tweets dataset from kaggle using Keras. Tweets will be classified as Positive or Negative based on the content of the tweets. [Link]
 
 ### [XGBoost Fraud Detection](https://github.com/AhmedMelaih/XGBoost_Fraud_Detection)
 - End-to-end Credit Card fraud detection pipeline using XGBoost, including data preprocessing, class imbalance handling, model training, evaluation, and SHAP-based explainability. [Link]
@@ -26,15 +26,15 @@
 - GWC LTD.  (Jun 2017-DEC 2019)
 
 ### IT End user production support - Dealing room
-- [BNP Paribas MEA](https://mea.bnpparibas.com/en/our-geographies/bahrain/) Regional IT department  (JAN 2017- MAy 2017)
+- [BNP Paribas MEA](https://mea.bnpparibas.com/en/our-geographies/bahrain/) Regional IT department  (JAN 2017- MAY 2017)
 
 
 
 
 
 ## Education
-- BC.S in Computer Science - [University of Bahrain](https://www.uob.edu.bh/)
-- Datscince and ML Advanced Skills Program - [Skills Union](https://skillsunion.com/)
+- B.Sc. in Computer Science - [University of Bahrain](https://www.uob.edu.bh/)
+- Data Science and ML Advanced Skills Program - [Skills Union](https://skillsunion.com/)
   
 
 
