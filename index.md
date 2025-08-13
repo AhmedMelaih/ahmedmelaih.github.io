@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-<link rel="stylesheet" href="docs/css/custom.css">
+<link rel="stylesheet" href="docs/css/style.scss">
 
 # Ahmed Melaih
 **System Analyst & Data Engineer**  
