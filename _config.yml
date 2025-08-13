@@ -8,8 +8,8 @@ author:
 logo: "/assets/me_official.png"
 image: "/assets/me_official.png"
 
-#theme: jekyll-theme-minimal
-theme: null
+theme: jekyll-theme-minimal
+#theme: null
 
 plugins:
   - jekyll-seo-tag
