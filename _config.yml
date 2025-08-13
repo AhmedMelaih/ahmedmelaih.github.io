@@ -21,3 +21,7 @@ social:
 
 sass:
   style: compressed
+
+  include:
+  - assets/css/style.scss
+
