@@ -30,5 +30,6 @@ collections:
     output: true
 
 plugins:
-  - jekyll-feed
+ # - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-seo-tag
