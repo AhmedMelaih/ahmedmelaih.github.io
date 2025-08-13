@@ -8,7 +8,7 @@ author:
 logo: "/assets/me_official.png"
 image: "/assets/og.jpg"
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minima
 
 plugins:
   - jekyll-seo-tag
