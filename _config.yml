@@ -16,7 +16,7 @@ title: Ahmed Melaih
 logo: docs/assets/me_official.png
 description: System Analyst | Data Engineer 
 #theme: jekyll-theme-dark-minimal
-theme: jekyll-theme-dark-minimal
+theme: jekyll-theme-minimal
 
 sass:
   style: compressed
