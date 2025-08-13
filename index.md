@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="docs/css/custom.css">
 ---
 layout: default
 title: Home
