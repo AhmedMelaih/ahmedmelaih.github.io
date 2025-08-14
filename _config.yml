@@ -1,28 +1,35 @@
-title: "Ahmed Melaih"
-description: "Data Science and Engineering"
-url: "https://ahmedmelaih.github.io"
-author:
-  name: "Ahmed Melaih"
-  email: "ahmedemlaih@gmail.com"
-  url: "ahmedemlaih@gmail.com"
-logo: "/assets/me_official.png"
-image: "/assets/me_official.png"
+#title: Ahmed Melaih
+#logo: docs/assets/Profile_pic2.png
+#logo: docs/assets/me_official.png
 
-theme: null
+#description: System Analyst | Data Engineer
+#theme: jekyll-theme-Dark-minimal
+#theme: minima
+#sass:
+ # style: compressed
 
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# Social usernames (for SEO cards)
-social:
-  github: AhmedMelaih
-  linkedin: ahmedmelaih
+# Uncomment this if not already set
+#plugins:
+ # - jekyll-feed
+ # - jekyll-seo-tag
+title: Ahmed Melaih
+logo: docs/assets/me_official.png
+description: System Analyst | Data Engineer 
+#theme: jekyll-theme-dark-minimal
+theme: jekyll-theme-minimal
 
 sass:
   style: compressed
 
-  include:
-  - assets/style.css
+url: "https://ahmedmelaih.github.io"
+# If this is a project site, set baseurl to "/your-repo-name"
+baseurl: ""
 
+collections:
+  projects:
+    output: true
+
+plugins:
+ # - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-seo-tag
