@@ -1,3 +1,8 @@
+---
+layout: default
+title: Ahmed Melaih
+---
+
 # Ahmed Melaih
 **System Analyst & Data Engineer**  
 [GitHub](https://github.com/AhmedMelaih) • [LinkedIn](https://linkedin.com/in/ahmedmelaih) • [Email](mailto:your.email@example.com) • [Resume PDF](assets/Ahmed_Melaih_CV.pdf)
