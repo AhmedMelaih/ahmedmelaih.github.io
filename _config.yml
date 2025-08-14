@@ -15,6 +15,7 @@
 title: "Ahmed Melaih"
 description: "System Analyst & Data Engineer | Banking tech, data pipelines, ML for finance (Bahrain)"
 url: "https://ahmedmelaih.github.io"
+baseurl: ""
 author:
   name: "Ahmed Melaih"
   url: "https://ahmedmelaih.github.io"
