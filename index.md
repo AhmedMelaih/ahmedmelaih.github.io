@@ -8,8 +8,7 @@ title: Ahmed Melaih
 [GitHub](https://github.com/AhmedMelaih) • [LinkedIn](https://linkedin.com/in/ahmedmelaih) • [Email](mailto:your.email@example.com) • [Resume PDF](assets/Ahmed_Melaih_CV.pdf)
 
 ---
-
-## About Me
+<h2 id="about">About Me</h2>
 I’m a **Senior System Analyst** with over 7 years of experience in core banking platforms, enterprise systems, and data analytics. I’ve delivered projects in **machine learning, data pipelines, and business intelligence** — with a special focus on **banking and broadcasting sectors** in Bahrain.
 
 Key strengths:
