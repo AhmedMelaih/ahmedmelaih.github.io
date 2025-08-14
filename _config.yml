@@ -12,24 +12,19 @@
 #plugins:
  # - jekyll-feed
  # - jekyll-seo-tag
-title: Ahmed Melaih
-logo: docs/assets/me_official.png
-description: System Analyst | Data Engineer 
-#theme: jekyll-theme-dark-minimal
-theme: jekyll-theme-minimal
-
-sass:
-  style: compressed
-
+title: "Ahmed Melaih"
+description: "System Analyst & Data Engineer | Banking tech, data pipelines, ML for finance (Bahrain)"
 url: "https://ahmedmelaih.github.io"
-# If this is a project site, set baseurl to "/your-repo-name"
-baseurl: ""
+author:
+  name: "Ahmed Melaih"
+  url: "https://ahmedmelaih.github.io"
+logo: "/assets/me_official.png"
 
-collections:
-  projects:
-    output: true
+# Choose ONE of these:
+theme: jekyll-theme-cayman   # simple built-in
+# remote_theme: alshedivat/al-folio  # richer portfolio theme
 
 plugins:
- # - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-seo-tag
+  - jekyll-sitemap
+
