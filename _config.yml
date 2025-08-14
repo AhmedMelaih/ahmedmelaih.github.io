@@ -21,7 +21,7 @@ author:
 logo: "/assets/me_official.png"
 
 # Choose ONE of these:
-theme: jekyll-theme-cayman   # simple built-in
+theme: jekyll-theme-minimal   # simple built-in
 # remote_theme: alshedivat/al-folio  # richer portfolio theme
 
 plugins:
