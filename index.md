@@ -21,9 +21,9 @@ Key strengths:
 
 ## Data Science Projects
 
-<div style="display: grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap: 1rem;">
+<div data-aos="fade-up" style="display: grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap: 1rem;">
 
-<div style="border:1px solid #ddd; padding:1rem; border-radius:8px;">
+<div data-aos="fade-up" style="border:1px solid #ddd; padding:1rem; border-radius:8px;">
 <h3>NLP — Tweets Sentiment Classification</h3>
 <p><strong>Problem:</strong> Classify tweet sentiment (positive/negative) on a Kaggle dataset.<br>
 <strong>Approach:</strong> Keras + LSTM, balanced classes, text cleaning, GloVe embeddings.<br>
@@ -31,7 +31,7 @@ Key strengths:
 <a href="https://github.com/AhmedMelaih/NLP_Tweets_Sentiment_Classification">View Code →</a></p>
 </div>
 
-<div style="border:1px solid #ddd; padding:1rem; border-radius:8px;">
+<div data-aos="fade-up" style="border:1px solid #ddd; padding:1rem; border-radius:8px;">
 <h3>Fraud Detection — Credit Cards (XGBoost)</h3>
 <p><strong>Problem:</strong> Detect fraudulent transactions in highly imbalanced data.<br>
 <strong>Approach:</strong> XGBoost with class weighting, stratified CV, PR-AUC optimization, SHAP.<br>
@@ -39,7 +39,7 @@ Key strengths:
 <a href="https://github.com/AhmedMelaih/XGBoost_Fraud_Detection">View Code →</a></p>
 </div>
 
-<div style="border:1px solid #ddd; padding:1rem; border-radius:8px;">
+<div data-aos="fade-up" style="border:1px solid #ddd; padding:1rem; border-radius:8px;">
 <h3>Bank Stock Price Analysis</h3>
 <p><strong>Problem:</strong> Compare performance & correlation across bank tickers.<br>
 <strong>Approach:</strong> yfinance, rolling means, cumulative returns, correlation heatmap.<br>
