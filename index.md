@@ -2,7 +2,8 @@
 layout: default
 title: Ahmed Melaih
 ---
-
+<div class="layout">
+  
 <h1 >Ahmed Melaih</h1> 
 **System Analyst & Data Engineer**  
 [GitHub](https://github.com/AhmedMelaih) • [LinkedIn](https://linkedin.com/in/ahmedmelaih) • [Email](mailto:your.email@example.com) • [Resume PDF](assets/Ahmed_Melaih_CV.pdf)
@@ -23,7 +24,10 @@ Key strengths:
 - **Platforms:** Core banking systems, enterprise data warehouses
 - **Tools:** GitHub, Jupyter, Tableau, FreeRTOS, ESP32
 
+</div>
 ---
+<div class="content">
+  
 <section id="about" class="reveal">
 <h2 id="about">Data Science Projects</h2> 
 
@@ -77,5 +81,6 @@ _Techno Blue_ — May 2017 – Nov 2017
 University of Bahrain
 
 ---
+</div>
 
 {% seo %}
