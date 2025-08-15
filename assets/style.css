@@ -13,13 +13,39 @@
 }
 
 /* Body */
+
+/* Page padding like Brittany Chiang */
 body {
-  background-color: var(--bg-color) !important;
-  color: var(--text-color) !important;
-  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif !important;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  font-family: 'Inter', sans-serif;
   line-height: 1.7;
+  padding: 0 20vw; /* 20% left/right for desktop */
 }
 
+@media (max-width: 1024px) {
+  body {
+    padding: 0 10vw;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 5vw;
+  }
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* Headings */
 h1, h2, h3, h4 {
   color: var(--accent-color) !important;
