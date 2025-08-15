@@ -9,8 +9,6 @@ title: Ahmed Melaih
 
 ---
 <section id="about" class="reveal">
-  <h2>About Me</h2>
-  <p>Short impactful description here.</p>
 
 <h2 id="about">About Me</h2>
 I’m a **Senior System Analyst** with over 7 years of experience in core banking platforms, enterprise systems, and data analytics. I’ve delivered projects in **machine learning, data pipelines, and business intelligence** — with a special focus on **banking and broadcasting sectors** in Bahrain.
@@ -25,7 +23,7 @@ Key strengths:
 
 ---
 <section id="about" class="reveal">
-## Data Science Projects
+<h2 id="about">Data Science Projects</h2> 
 
 <div  style="display: grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap: 1rem;">
 
