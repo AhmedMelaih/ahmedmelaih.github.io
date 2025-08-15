@@ -48,7 +48,7 @@ body {
 }
 /* Headings */
 h1, h2, h3, h4 {
-  color: var(--accent-color) !important;
+  color: rgb(226 232 240 / var(--tw-text-opacity)) !important;
   font-weight: 600;
 }
 
