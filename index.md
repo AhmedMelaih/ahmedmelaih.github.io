@@ -20,15 +20,11 @@ title: Ahmed Melaih
 
 </section>
 
-<div>
 Key strengths:
 - **Programming:** Python, SQL, JavaScript
 - **Data Science:** XGBoost, Keras, NLP, SHAP interpretability
 - **Platforms:** Core banking systems, enterprise data warehouses
 - **Tools:** GitHub, Jupyter, Tableau, FreeRTOS, ESP32
-
-</div>
-
 ---
   
 <section id="about" class="reveal">
