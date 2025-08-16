@@ -10,7 +10,11 @@ title: Ahmed Melaih
 ---
 
 ## About Me
-I’m a **Senior System Analyst** with over 7 years of experience in core banking platforms, enterprise systems, and data analytics. I’ve delivered projects in **machine learning, data pipelines, and business intelligence** — with a special focus on **banking and broadcasting sectors** in Bahrain.
+I’m Ahmed Melaih, a Data Scientist and Senior System Analyst with 7+ years of experience working across financial services, enterprise platforms, and mission-critical systems. My passion lies in using data, AI, and advanced analytics to solve real-world problems and drive smarter business decisions.
+
+Currently pursuing an M.Sc. in Big Data Science and Analytics, I specialize in machine learning, NLP, and GenAI, with projects ranging from fraud detection and customer segmentation to LLM-powered support bots. I’m also skilled in Python, SQL, Power BI, MLOps, and cloud platforms (AWS, Azure, GCP).
+
+This portfolio showcases my journey into AI & data science, where I combine technical expertise and industry knowledge to build impactful, data-driven solutions.
 
 Key strengths:
 - **Programming:** Python, SQL, JavaScript
