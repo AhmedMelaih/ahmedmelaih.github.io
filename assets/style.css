@@ -57,7 +57,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-        font-size: 3rem;
+        font-size: 1.5rem;
         line-height: 1;
 }
 
@@ -86,9 +86,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #64ffda;
+  #color: #64ffda;
 }
 
 p {
