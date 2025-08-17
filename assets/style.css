@@ -51,7 +51,9 @@ body {
 h1, h2, h3, h4 {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
-  color: #e6f1ff;
+  /*color: #e6f1ff; */
+  color: white;
+
 }
 
 h1 {
