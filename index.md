@@ -11,7 +11,7 @@ title: Ahmed Melaih
 
 <section id="about" class="reveal">
 
-<h3 id="about">ABOUT</h3>
+<h2 id="about">ABOUT</h2>
 
 <p>I’m Ahmed Melaih, a Data Scientist and Senior System Analyst with <span class="boldp"> 7+ years of experience </span> working across financial services, enterprise platforms, and mission-critical systems. My passion lies in using data, AI, and advanced analytics to solve real-world problems and drive smarter business decisions.</p>
 
