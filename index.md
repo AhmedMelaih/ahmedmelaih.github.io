@@ -85,6 +85,7 @@ University of Bahrain
 
 **Certifications: Data Science & ML** -  AUG 2025 
 (SkillsUnion) 
----
 
+---
+<section class="reveal"> </section>
 {% seo %}
