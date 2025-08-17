@@ -66,16 +66,16 @@ Key strengths:
 
 ## Experience
 
-**Senior System Analyst – Broadcast Core Platforms**  
+**Sr. System Analyst Lead – Core Systems**  
 _Ministry of Information (GBM–IBM)_ — Nov 2017 – Present  
-- Led the upgrade and maintenance of mission-critical broadcasting systems, ensuring 99.9% uptime.  
+- Led the API integration, upgrade and maintenance of mission-critical broadcasting systems, ensuring 99.999% uptime.  
 - Integrated new digital archiving platform, reducing retrieval time by 40%.  
 - Managed vendor relationships and SLA compliance.
 
-**Software Engineer**  
-_Techno Blue_ — May 2017 – Nov 2017  
-- Developed and supported ERP modules for inventory and sales.  
-- Automated report generation, cutting monthly manual work by 20 hours.
+**Data Scientist - Advanced Skills Program**  
+_Skills Union_ — Jan 2025 – Aug 2025  
+- Advanced Data Science ML and AI Skills.
+- Data strategy governance and compliance  
 
 ---
 
@@ -83,7 +83,7 @@ _Techno Blue_ — May 2017 – Nov 2017
 **B.Sc. Computer Science** — SEP 2016  
 University of Bahrain
 
-**Certifications: Data Science & ML** -  AUG 2025 
+**Data Science, Analytics and AI** -  AUG 2025 
 (SkillsUnion) 
 
 ---
