@@ -26,8 +26,7 @@ Key strengths:
 - **Data Science:** XGBoost, Keras, NLP, SHAP interpretability
 - **Platforms:** Core banking systems, enterprise data warehouses
 - **Tools:** GitHub, Jupyter, Tableau, FreeRTOS, ESP32
-
-
+  
 ---
   
 <section id="about" class="reveal">
