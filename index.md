@@ -15,7 +15,7 @@ title: Ahmed Melaih
 
 <p>I’m Ahmed Melaih, a Data Scientist and Senior System Analyst with <span class="boldp"> 7+ years of experience </span> working across financial services, enterprise platforms, and mission-critical systems. My passion lies in using data, AI, and advanced analytics to solve real-world problems and drive smarter business decisions.</p>
 
-<p>Currently, I specialize in machine learning, NLP, and GenAI, with projects ranging from fraud detection and customer segmentation to LLM-powered support bots. I’m also skilled in Python, SQL, Power BI, MLOps, and cloud platforms (AWS, Azure, GCP).</p>
+<p>Currently, I specialize in machine learning, NLP, and GenAI, with <span class="boldp" >projects </span> ranging from fraud detection and customer segmentation to LLM-powered support bots. I’m also skilled in <span class="boldp">Python, SQL, Power BI, MLOps, and cloud platforms (AWS, Azure, GCP).</span></p>
 
 <p>This portfolio showcases my journey into AI & data science, where I combine technical expertise and industry knowledge to build impactful, data-driven solutions. </p>
 
