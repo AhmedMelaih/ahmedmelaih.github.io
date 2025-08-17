@@ -73,6 +73,11 @@ p{
   
 }
 
+.boldp{
+  font-weight: bold; /* Makes the text bold */
+  color: white; /* Sets the text color to white */
+}
+
 h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
