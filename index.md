@@ -5,8 +5,9 @@ title: Ahmed Melaih
   
 <h1 >Ahmed Melaih</h1> 
 *Data Scientist | Senior System Analyst*  
+
 <p><span clas="boldp">I turn messy data into deployable models that forecast outcomes and drive decisions.</span> </p>
-[GitHub](https://github.com/AhmedMelaih) • [LinkedIn](https://linkedin.com/in/ahmedmelaih) • [Email](mailto:your.email@example.com) • [Resume PDF](assets/Ahmed_Melaih_CV.pdf)
+[GitHub](https://github.com/AhmedMelaih) • [LinkedIn](https://linkedin.com/in/ahmedmelaih) • [Email](mailto:ahmedemlaih@gmail.com) • [Resume PDF](assets/Ahmed Melaih Data Scientist Resume FO.pdf)
 
 ---
 
