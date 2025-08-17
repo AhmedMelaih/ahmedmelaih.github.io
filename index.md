@@ -8,6 +8,7 @@ title: Ahmed Melaih
 [GitHub](https://github.com/AhmedMelaih) • [LinkedIn](https://linkedin.com/in/ahmedmelaih) • [Email](mailto:your.email@example.com) • [Resume PDF](assets/Ahmed_Melaih_CV.pdf)
 
 ---
+
 <section id="about" class="reveal">
 
 <h3 id="about">ABOUT</h3>
@@ -25,6 +26,7 @@ Key strengths:
 - **Data Science:** XGBoost, Keras, NLP, SHAP interpretability
 - **Platforms:** Core banking systems, enterprise data warehouses
 - **Tools:** GitHub, Jupyter, Tableau, FreeRTOS, ESP32
+
 
 ---
   
@@ -59,6 +61,8 @@ Key strengths:
 
 </div>
 </section>
+
+
 ---
 
 ## Experience
