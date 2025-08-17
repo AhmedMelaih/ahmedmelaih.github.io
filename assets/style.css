@@ -213,5 +213,130 @@ section {
   .content {
     padding: 2rem;
   }
+  /* Sidebar Enhancements */
+.sidebar {
+  flex: 0 0 280px; /* Adjust width to fit Minimal theme proportions */
+  padding: 2rem;
+  background: #0a192f;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1); /* Add a subtle divider */
+}
+
+.sidebar h1 {
+  color: #64ffda;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar h2 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #8892b0;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.social-links li {
+  margin-bottom: 0.5rem;
+}
+
+.social-links a {
+  color: #64ffda;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-hover);
+}
+
+.social-links a svg {
+  margin-right: 0.5rem; /* Add space for icons */
+  font-size: 1.2rem;
+}
+
+/* Content Enhancements */
+.content {
+  flex: 1;
+  padding: 3rem 5rem;
+  background: rgba(255, 255, 255, 0.02); /* Add slight background contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for focus */
+}
+
+section {
+  margin-bottom: 4rem; /* Adjust spacing between sections */
+}
+
+.content h1, .content h2 {
+  color: #e6f1ff;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #64ffda;
+}
+
+.content p {
+  color: #8892b0;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive for tablets & mobiles */
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: unset;
+    height: auto;
+    position: relative;
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+    border-right: none;
+  }
+
+  .content {
+    padding: 2rem;
+    box-shadow: none; /* Remove shadow for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar h1 {
+    font-size: 1.8rem;
+  }
+
+  .sidebar h2 {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+}
 }
 
