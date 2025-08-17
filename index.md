@@ -80,9 +80,11 @@ _Techno Blue_ — May 2017 – Nov 2017
 ---
 
 ## Education
-**B.Sc. Computer Science** — May 2017  
+**B.Sc. Computer Science** — SEP 2016  
 University of Bahrain
 
+**Certifications: Data Science & ML** -  AUG 2025 
+(SkillsUnion) 
 ---
 
 {% seo %}
