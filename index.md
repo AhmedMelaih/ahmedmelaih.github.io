@@ -68,8 +68,8 @@ Key strengths:
 
 ## Experience
 
-**Sr. System Analyst Lead – Core Systems**  
-_Ministry of Information (GBM–IBM)_ — Nov 2017 – Present  
+**Sr. System Analyst – Core Systems**  
+_Ministry of Information (GBM–IBM)_ — Jul 2020 – Present  
 - Led the API integration, upgrade and maintenance of mission-critical broadcasting systems, ensuring 99.999% uptime.  
 - Integrated new digital archiving platform, reducing retrieval time by 40%.  
 - Managed vendor relationships and SLA compliance.
@@ -79,6 +79,31 @@ _Skills Union_ — Jan 2025 – Aug 2025
 - Advanced Data Science ML and AI Skills.
 - Data strategy governance and compliance  
 
+**ERP System Analyst**  
+_Almoayyed Computers_ — Jan 2020 – Jun 2020  
+- Analyzed ERP data flows, coordinated client requirements, supported integration.
+- Ensured policy compliance and optimized internal processes to improve delivery efficiency and customer
+satisfaction.
+- Participated in project status reporting, crossfunctional
+team coordination, and issue resolution.
+
+**IT Engineer**  
+_GWC LTD_ — Jan 2017 – DEC 2019  
+- Supporting Continuity of operations of Banking Systems
+- Delivered tier-2/3 support for enterprise clients in the
+financial and logistics sectors.
+- Assisted with system upgrades, patch management,
+and automation of IT operations.
+- Authored SOPs and support documentation to ensure
+repeatable and compliant operations.
+   
+**IT Support – Dealing Room**  
+_BNP Paribas MEA_ — Jan 2017 – Jun 2017  
+- Provided end-user and infrastructure support on trading floor.
+- Managed IT hardware inventory and support tickets
+using ITSM ServiceNow.
+- Ensured continuity of operations by adhering to BNP's
+global IT governance procedures.
 ---
 
 ## Education
