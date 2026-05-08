@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Melaih — Data Scientist &amp; System Analyst</title>
+  <meta name="description" content="Data Scientist and Senior System Analyst with 7+ years of experience in financial services, enterprise platforms, and mission-critical systems in Bahrain.">
+  <meta name="author" content="Ahmed Melaih">
+  <meta property="og:title" content="Ahmed Melaih — Data Scientist">
+  <meta property="og:description" content="Data Scientist and Senior System Analyst based in Bahrain.">
+  <meta property="og:url" content="https://ahmedmelaih.github.io">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <style>
+    /* ── Variables ─────────────────────────────────── */
+    :root {
+      --navy:       #0a192f;
+      --navy-l:     #112240;
+      --navy-ll:    #1d3461;
+      --slate:      #8892b0;
+      --slate-l:    #a8b2d8;
+      --slate-ll:   #ccd6f6;
+      --white:      #e6f1ff;
+      --teal:       #64ffda;
+      --teal-bg:    rgba(100,255,218,0.08);
+      --teal-bdr:   rgba(100,255,218,0.2);
+      --sans:       'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --mono:       'JetBrains Mono', 'Courier New', monospace;
+      --ease:       cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ── Reset ─────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--navy);
+      color: var(--slate);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; }
+    ul { list-style: none; }
+    img { display: block; max-width: 100%; }
+
+    /* ── Mobile header (shown <768px) ──────────────── */
+    #mob-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 500;
+      height: 56px;
+      padding: 0 1.25rem;
+      background: rgba(10,25,47,0.97);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    #mob-header .mob-name {
+      font-family: var(--mono);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--teal);
+    }
+    #hamburger {
+      background: none;
+      border: none;
+      color: var(--slate-l);
+      font-size: 1.3rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px;
+    }
+    .mob-resume {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--teal);
+      border: 1px solid var(--teal-bdr);
+      padding: 4px 10px;
+      border-radius: 3px;
+      transition: background 0.2s;
+    }
+    .mob-resume:hover { background: var(--teal-bg); }
+
+    /* ── Overlay ───────────────────────────────────── */
+    #overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 400;
+      background: rgba(2,12,27,0.75);
+    }
+    #overlay.show { display: block; }
+
+    /* ── Sidebar ───────────────────────────────────── */
+    #sidebar {
+      position: fixed;
+      top: 0; left: 0;
+      width: 280px;
+      height: 100%;
+      z-index: 450;
+      background: var(--navy);
+      padding: 2.5rem 1.75rem;
+      overflow-y: auto;
+      transform: translateX(-100%);
+      transition: transform 0.28s var(--ease);
+      display: flex;
+      flex-direction: column;
+      gap: 2.25rem;
+    }
+    #sidebar.open { transform: translateX(0); }
+
+    /* ── Profile block ─────────────────────────────── */
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 2px solid var(--teal);
+      margin-bottom: 1rem;
+    }
+    .s-name {
+      font-family: var(--sans);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+    }
+    .s-role {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--teal);
+      line-height: 1.5;
+      margin-bottom: 0.85rem;
+    }
+    .s-tagline {
+      font-size: 0.82rem;
+      color: var(--slate);
+      line-height: 1.65;
+      max-width: 220px;
+    }
+
+    /* ── Sidebar nav ───────────────────────────────── */
+    .s-nav ul { display: flex; flex-direction: column; gap: 2px; }
+    .s-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.4rem 0;
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--slate);
+      transition: color 0.2s var(--ease);
+    }
+    .nav-bar {
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+      flex-shrink: 0;
+      transition: width 0.22s var(--ease), color 0.22s var(--ease);
+    }
+    .s-nav a:hover,
+    .s-nav a.active {
+      color: var(--white);
+    }
+    .s-nav a.active { color: var(--teal); }
+    .s-nav a:hover .nav-bar,
+    .s-nav a.active .nav-bar { width: 48px; }
+
+    /* ── Social icons ──────────────────────────────── */
+    .s-social {
+      display: flex;
+      gap: 1.1rem;
+      margin-top: auto;
+    }
+    .s-social a {
+      color: var(--slate);
+      font-size: 1.15rem;
+      transition: color 0.2s, transform 0.2s;
+    }
+    .s-social a:hover {
+      color: var(--teal);
+      transform: translateY(-2px);
+    }
+
+    /* ── Main content ──────────────────────────────── */
+    #main {
+      padding: 68px 1.25rem 3rem;
+    }
+
+    /* ── Section ───────────────────────────────────── */
+    .sec {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      scroll-margin-top: 72px;
+    }
+    .sec:last-of-type { border-bottom: none; }
+
+    .sec-title {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 1.75rem;
+    }
+
+    /* ── Reveal animation ──────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+    }
+    .reveal.in { opacity: 1; transform: none; }
+
+    /* ── About ─────────────────────────────────────── */
+    .about-body p {
+      font-size: 0.95rem;
+      color: var(--slate);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .about-body p:last-child { margin-bottom: 0; }
+    .about-body strong { color: var(--slate-ll); font-weight: 600; }
+
+    /* ── Skills ────────────────────────────────────── */
+    .skill-group { margin-bottom: 1.5rem; }
+    .skill-group:last-child { margin-bottom: 0; }
+    .skill-label {
+      font-family: var(--mono);
+      font-size: 0.67rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--slate-l);
+      margin-bottom: 0.6rem;
+    }
+    .badges { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .badge {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--teal);
+      background: var(--teal-bg);
+      border: 1px solid var(--teal-bdr);
+      border-radius: 3px;
+      padding: 3px 10px;
+      cursor: default;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .badge:hover {
+      background: rgba(100,255,218,0.15);
+      border-color: var(--teal);
+    }
+
+    /* ── Projects ──────────────────────────────────── */
+    .proj-grid { display: grid; gap: 1rem; }
+
+    .proj-card {
+      background: var(--navy-l);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 6px;
+      padding: 1.5rem;
+      transition: transform 0.22s var(--ease),
+                  box-shadow 0.22s var(--ease),
+                  border-color 0.22s var(--ease),
+                  background 0.22s var(--ease);
+    }
+    .proj-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(2,12,27,0.6);
+      border-color: rgba(100,255,218,0.35);
+      background: #152a4a;
+    }
+    .proj-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    .proj-icon { font-size: 1.75rem; color: var(--teal); line-height: 1; }
+    .proj-gh a {
+      color: var(--slate);
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    .proj-gh a:hover { color: var(--teal); }
+
+    .proj-title {
+      font-family: var(--sans);
+      font-size: 0.975rem;
+      font-weight: 600;
+      color: var(--slate-ll);
+      margin-bottom: 0.6rem;
+      line-height: 1.35;
+    }
+    .proj-desc {
+      font-size: 0.875rem;
+      color: var(--slate);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+    .proj-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 0.85rem;
+    }
+    .metric {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--slate-l);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 3px;
+      padding: 2px 8px;
+    }
+    .metric strong { color: var(--teal); }
+    .proj-tags { display: flex; flex-wrap: wrap; gap: 2px; }
+    .tag {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--slate);
+      padding-right: 0.7rem;
+    }
+    .tag::before { content: '#'; color: var(--teal); margin-right: 1px; }
+
+    .all-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-top: 1.25rem;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--teal);
+      transition: gap 0.2s var(--ease);
+    }
+    .all-link:hover { gap: 0.75rem; }
+
+    /* ── Timeline (Experience) ─────────────────────── */
+    .timeline { display: flex; flex-direction: column; gap: 2px; }
+
+    .t-item {
+      padding: 1.1rem;
+      border-radius: 5px;
+      transition: background 0.18s var(--ease);
+    }
+    .t-item:hover { background: var(--navy-l); }
+
+    .t-date {
+      font-family: var(--mono);
+      font-size: 0.67rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--slate);
+      margin-bottom: 0.35rem;
+    }
+    .t-role {
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--slate-ll);
+      margin-bottom: 0.15rem;
+      transition: color 0.18s;
+    }
+    .t-item:hover .t-role { color: var(--teal); }
+    .t-company {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--slate-l);
+      margin-bottom: 0.65rem;
+    }
+    .t-item ul { padding-left: 1rem; margin-bottom: 0.65rem; }
+    .t-item li {
+      font-size: 0.875rem;
+      color: var(--slate);
+      line-height: 1.75;
+      margin-bottom: 0.3rem;
+    }
+    .t-item li strong { color: var(--slate-ll); }
+    .t-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+    /* ── Education ─────────────────────────────────── */
+    .edu-list { display: flex; flex-direction: column; gap: 2px; }
+    .edu-item {
+      padding: 1.1rem;
+      border-radius: 5px;
+      transition: background 0.18s var(--ease);
+    }
+    .edu-item:hover { background: var(--navy-l); }
+    .edu-year {
+      font-family: var(--mono);
+      font-size: 0.67rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--slate);
+      margin-bottom: 0.2rem;
+    }
+    .edu-degree {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--slate-ll);
+      margin-bottom: 0.15rem;
+    }
+    .edu-school {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--teal);
+    }
+
+    /* ── Footer ────────────────────────────────────── */
+    #footer {
+      padding: 1.75rem 0 1rem;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--slate);
+      line-height: 1.7;
+    }
+    #footer a { color: var(--teal); }
+
+    /* ══════════════════════════════════════════════
+       DESKTOP — sidebar becomes sticky column
+    ══════════════════════════════════════════════ */
+    @media (min-width: 768px) {
+      #mob-header { display: none; }
+      #overlay     { display: none !important; }
+
+      /* Two-column grid */
+      #page {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        min-height: 100vh;
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+
+      /* Sidebar: reset mobile transform, become sticky column */
+      #sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        transform: none !important;
+        width: auto;
+        padding: 4.5rem 2.5rem 2.5rem;
+        background: var(--navy);
+        border-right: 1px solid rgba(255,255,255,0.05);
+      }
+
+      #main {
+        padding: 5.5rem 4rem 5rem 3.5rem;
+        max-width: 740px;
+      }
+
+      .sec { scroll-margin-top: 100px; }
+    }
+
+    @media (min-width: 1100px) {
+      #page { grid-template-columns: 340px 1fr; }
+      #sidebar { padding: 5rem 3rem 3rem; }
+      #main { padding: 6rem 5rem 5rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Mobile header -->
+  <header id="mob-header">
+    <button id="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    <span class="mob-name">Ahmed Melaih</span>
+    <a href="assets/Ahmed Melaih Data Scientist Resume FO.pdf" target="_blank" rel="noopener" class="mob-resume">Resume</a>
+  </header>
+
+  <!-- Overlay (mobile menu backdrop) -->
+  <div id="overlay"></div>
+
+  <!-- Page wrapper -->
+  <div id="page">
+
+    <!-- ── Sidebar ── -->
+    <aside id="sidebar">
+
+      <div class="profile">
+        <img src="docs/assets/me_official.png" alt="Ahmed Melaih" class="avatar" onerror="this.style.display='none'">
+        <p class="s-name">Ahmed Melaih</p>
+        <p class="s-role">Data Scientist &amp;<br>Senior System Analyst</p>
+        <p class="s-tagline">Turning messy data into deployable models that forecast outcomes and drive decisions.</p>
+      </div>
+
+      <nav class="s-nav" aria-label="Page sections">
+        <ul>
+          <li><a href="#about"      class="nav-link"><span class="nav-bar"></span><span>About</span></a></li>
+          <li><a href="#skills"     class="nav-link"><span class="nav-bar"></span><span>Skills</span></a></li>
+          <li><a href="#projects"   class="nav-link"><span class="nav-bar"></span><span>Projects</span></a></li>
+          <li><a href="#experience" class="nav-link"><span class="nav-bar"></span><span>Experience</span></a></li>
+          <li><a href="#education"  class="nav-link"><span class="nav-bar"></span><span>Education</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="s-social">
+        <a href="https://github.com/AhmedMelaih"       target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/ahmedmelaih"  target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:ahmedemlaih@gmail.com"          aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="assets/Ahmed Melaih Data Scientist Resume FO.pdf" target="_blank" rel="noopener" aria-label="Resume PDF"><i class="fas fa-file-pdf"></i></a>
+      </div>
+
+    </aside>
+
+    <!-- ── Main ── -->
+    <main id="main">
+
+      <!-- About -->
+      <section id="about" class="sec reveal">
+        <p class="sec-title">About</p>
+        <div class="about-body">
+          <p>I'm a <strong>Data Scientist and Senior System Analyst</strong> with <strong>7+ years of experience</strong> across financial services, enterprise platforms, and mission-critical systems in Bahrain and the wider MENA region.</p>
+          <p>My work sits at the intersection of <strong>machine learning, NLP, and GenAI</strong> — I take models beyond notebooks into production. I've delivered fraud detection pipelines, customer segmentation engines, time-series forecasting, and LLM-powered applications that real teams depend on.</p>
+          <p>I combine deep technical expertise in <strong>Python, XGBoost, Keras, and cloud platforms</strong> with hands-on experience in core banking infrastructure, government broadcasting systems, and ERP platforms. I understand both the data and the systems it flows through.</p>
+          <p>Currently completing an advanced programme in <strong>Data Science, Analytics &amp; AI</strong> at SkillsUnion, focused on data strategy, governance, and cutting-edge ML methods.</p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="sec reveal">
+        <p class="sec-title">Skills</p>
+
+        <div class="skill-group">
+          <p class="skill-label">Machine Learning &amp; AI</p>
+          <div class="badges">
+            <span class="badge">XGBoost</span>
+            <span class="badge">Keras / TensorFlow</span>
+            <span class="badge">LSTM</span>
+            <span class="badge">Scikit-learn</span>
+            <span class="badge">NLP</span>
+            <span class="badge">SHAP</span>
+            <span class="badge">LLMs / RAG</span>
+            <span class="badge">GenAI</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-label">Languages &amp; Data</p>
+          <div class="badges">
+            <span class="badge">Python</span>
+            <span class="badge">SQL</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Pandas</span>
+            <span class="badge">NumPy</span>
+            <span class="badge">Power BI</span>
+            <span class="badge">Tableau</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-label">Cloud &amp; MLOps</p>
+          <div class="badges">
+            <span class="badge">AWS</span>
+            <span class="badge">Azure</span>
+            <span class="badge">GCP</span>
+            <span class="badge">MLflow</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Git / GitHub</span>
+            <span class="badge">Jupyter</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-label">Systems &amp; Platforms</p>
+          <div class="badges">
+            <span class="badge">Core Banking Systems</span>
+            <span class="badge">ERP</span>
+            <span class="badge">ServiceNow (ITSM)</span>
+            <span class="badge">IBM GBM</span>
+            <span class="badge">FreeRTOS</span>
+            <span class="badge">ESP32</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="sec reveal">
+        <p class="sec-title">Projects</p>
+        <div class="proj-grid">
+
+          <div class="proj-card">
+            <div class="proj-top">
+              <div class="proj-icon"><i class="fas fa-brain"></i></div>
+              <div class="proj-gh"><a href="https://github.com/AhmedMelaih/NLP_Tweets_Sentiment_Classification" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+            </div>
+            <p class="proj-title">Tweet Sentiment Classification (NLP)</p>
+            <p class="proj-desc">End-to-end NLP pipeline classifying tweet sentiment using a bidirectional LSTM trained on GloVe word embeddings. Applied text cleaning, class balancing, and SHAP token-level attribution to make predictions auditable, not just accurate.</p>
+            <div class="proj-metrics">
+              <span class="metric"><strong>F1</strong> 0.89 (val)</span>
+              <span class="metric">Keras · LSTM · GloVe · SHAP</span>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">LSTM</span><span class="tag">Keras</span><span class="tag">GloVe</span><span class="tag">SHAP</span><span class="tag">NLP</span>
+            </div>
+          </div>
+
+          <div class="proj-card">
+            <div class="proj-top">
+              <div class="proj-icon"><i class="fas fa-shield-alt"></i></div>
+              <div class="proj-gh"><a href="https://github.com/AhmedMelaih/XGBoost_Fraud_Detection" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+            </div>
+            <p class="proj-title">Credit Card Fraud Detection</p>
+            <p class="proj-desc">Tackled extreme class imbalance (fraud &lt; 0.2%) using XGBoost with custom class weighting and PR-AUC optimization. SHAP analysis revealed the top three fraud signals: transaction amount, time delta, and merchant risk score.</p>
+            <div class="proj-metrics">
+              <span class="metric"><strong>PR-AUC</strong> 0.84</span>
+              <span class="metric">XGBoost · SHAP · imbalanced-learn</span>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">Imbalanced Learning</span><span class="tag">Stratified CV</span>
+            </div>
+          </div>
+
+          <div class="proj-card">
+            <div class="proj-top">
+              <div class="proj-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="proj-gh"><a href="https://github.com/AhmedMelaih/Bank_Stock_Price_Analysis_For_GitHub" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+            </div>
+            <p class="proj-title">Bank Stock Price Analysis</p>
+            <p class="proj-desc">Comparative performance and correlation analysis of major U.S. bank tickers via yfinance. Built rolling-mean smoothing, cumulative return curves, and a correlation heatmap to surface highly-correlated pairs for potential pairs-trading strategies.</p>
+            <div class="proj-metrics">
+              <span class="metric"><strong>Max correlation</strong> |ρ| &gt; 0.8</span>
+              <span class="metric">yfinance · Pandas · Seaborn</span>
+            </div>
+            <div class="proj-tags">
+              <span class="tag">Python</span><span class="tag">yfinance</span><span class="tag">Pandas</span><span class="tag">Seaborn</span><span class="tag">Finance</span>
+            </div>
+          </div>
+
+        </div>
+        <a href="https://github.com/AhmedMelaih" target="_blank" rel="noopener" class="all-link">
+          View all on GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="sec reveal">
+        <p class="sec-title">Experience</p>
+        <div class="timeline">
+
+          <div class="t-item">
+            <p class="t-date">Jul 2020 — Present</p>
+            <p class="t-role">Sr. System Analyst — Core Systems</p>
+            <p class="t-company">Ministry of Information (GBM–IBM) · Bahrain</p>
+            <ul>
+              <li>Led API integration, upgrade, and maintenance of mission-critical broadcasting systems, maintaining <strong>99.999% uptime</strong>.</li>
+              <li>Delivered integration of a digital archiving platform, cutting asset retrieval time by <strong>40%</strong>.</li>
+              <li>Managed multi-vendor relationships and SLA compliance across enterprise infrastructure.</li>
+            </ul>
+            <div class="t-tags badges">
+              <span class="badge">IBM</span><span class="badge">API Integration</span><span class="badge">SLA Management</span>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <p class="t-date">Jan 2025 — Aug 2025</p>
+            <p class="t-role">Data Scientist — Advanced Skills Programme</p>
+            <p class="t-company">SkillsUnion</p>
+            <ul>
+              <li>Intensive training in advanced ML, deep learning, NLP, and GenAI pipelines.</li>
+              <li>Applied data strategy, governance frameworks, and compliance in regulated industries.</li>
+            </ul>
+            <div class="t-tags badges">
+              <span class="badge">ML</span><span class="badge">Deep Learning</span><span class="badge">GenAI</span><span class="badge">Data Governance</span>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <p class="t-date">Jan 2020 — Jun 2020</p>
+            <p class="t-role">ERP System Analyst</p>
+            <p class="t-company">Almoayyed Computers · Bahrain</p>
+            <ul>
+              <li>Analyzed ERP data flows and translated complex client requirements into integration specifications.</li>
+              <li>Optimized delivery processes, improving efficiency and customer satisfaction scores.</li>
+            </ul>
+            <div class="t-tags badges">
+              <span class="badge">ERP</span><span class="badge">Data Analysis</span><span class="badge">Process Optimization</span>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <p class="t-date">Jan 2017 — Dec 2019</p>
+            <p class="t-role">IT Engineer</p>
+            <p class="t-company">GWC Ltd · Bahrain</p>
+            <ul>
+              <li>Supported continuity of banking systems; delivered tier-2/3 support for enterprise clients in financial and logistics sectors.</li>
+              <li>Managed system upgrades, patch management, and IT operations automation.</li>
+            </ul>
+            <div class="t-tags badges">
+              <span class="badge">Banking Systems</span><span class="badge">Enterprise IT</span><span class="badge">Automation</span>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <p class="t-date">Jan 2017 — Jun 2017</p>
+            <p class="t-role">IT Support — Dealing Room</p>
+            <p class="t-company">BNP Paribas MEA · Bahrain</p>
+            <ul>
+              <li>Provided end-user and infrastructure support on the trading floor under high-pressure conditions.</li>
+              <li>Managed hardware inventory and incidents via ServiceNow under BNP's global ITSM governance.</li>
+            </ul>
+            <div class="t-tags badges">
+              <span class="badge">ServiceNow</span><span class="badge">Trading Floor</span><span class="badge">ITSM</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="sec reveal">
+        <p class="sec-title">Education</p>
+        <div class="edu-list">
+          <div class="edu-item">
+            <p class="edu-year">2025</p>
+            <p class="edu-degree">Data Science, Analytics &amp; AI</p>
+            <p class="edu-school">SkillsUnion</p>
+          </div>
+          <div class="edu-item">
+            <p class="edu-year">2016</p>
+            <p class="edu-degree">B.Sc. Computer Science</p>
+            <p class="edu-school">University of Bahrain</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <p>Designed &amp; built by <strong style="color:var(--slate-ll)">Ahmed Melaih</strong> &nbsp;·&nbsp; <a href="mailto:ahmedemlaih@gmail.com">ahmedemlaih@gmail.com</a> &nbsp;·&nbsp; Bahrain</p>
+      </footer>
+
+    </main>
+  </div><!-- #page -->
+
+  <script>
+  (function () {
+    var sidebar  = document.getElementById('sidebar');
+    var overlay  = document.getElementById('overlay');
+    var hamburger = document.getElementById('hamburger');
+
+    // ── Mobile menu ──────────────────────────────────
+    function openMenu()  { sidebar.classList.add('open');  overlay.classList.add('show'); }
+    function closeMenu() { sidebar.classList.remove('open'); overlay.classList.remove('show'); }
+    hamburger.addEventListener('click', function () {
+      sidebar.classList.contains('open') ? closeMenu() : openMenu();
+    });
+    overlay.addEventListener('click', closeMenu);
+
+    // ── Smooth scroll + close mobile menu ───────────
+    var navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          closeMenu();
+        }
+      });
+    });
+
+    // ── Active nav on scroll ─────────────────────────
+    var sections = document.querySelectorAll('.sec[id]');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          navLinks.forEach(function (l) { l.classList.remove('active'); });
+          var a = document.querySelector('.nav-link[href="#' + entry.target.id + '"]');
+          if (a) a.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-25% 0px -65% 0px' });
+    sections.forEach(function (s) { io.observe(s); });
+
+    // ── Reveal on scroll ─────────────────────────────
+    var reveals = document.querySelectorAll('.reveal');
+    var ro = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          ro.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.07 });
+    reveals.forEach(function (el) { ro.observe(el); });
+  })();
+  </script>
+</body>
+</html>
